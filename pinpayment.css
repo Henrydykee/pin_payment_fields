@@ -1,0 +1,111 @@
+
+
+#textFieldContainer {
+  padding-right: 20px; /* Adjust the padding as needed */
+  padding-bottom: 10px;
+}
+
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.gap{
+  padding: 5px;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex; /* Apply Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margins */
+  background-color: #f4f4f4; /* Optional: Background color */
+}
+
+.dropDown {
+  width: auto; /* Auto width to fit the content */
+  min-width: 50px; 
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  /* box-sizing: border-box;
+  display: inline-block;  */
+  appearance: none; /* Removes default arrow for custom styling */
+}
+
+.containerHold {
+  width: 80%; /* Make the container width 100% of the screen */
+  margin: 40px ;
+  padding: 20px;
+  background-color: #FAFAFA;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.containerHold2 {
+  width: 80%; /* Make the container width 100% of the screen */
+  margin: 5px auto;
+  padding: 20px;
+  background-color: #FAFAFA;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+   /* Align items to the start of the column */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the start of the column */
+}
+
+.label{
+  font-weight: 500;
+  font-size: 14px;
+  color: #68696C;
+}
+
+.text-field {
+  /* display: block; */
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px; /* Space between text fields */
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Border styling */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  display: block; /* Ensure the button takes up the full width of its container */
+  width: 50%; /* Full width of the container or screen */
+  padding: 10px 0; /* Vertical padding for height, horizontal padding for width */
+  background-color: #E68E3C; /* Button background color */
+  color: white; /* Text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Optional: rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-align: center; /* Center text inside the button */
+  box-sizing: border-box; /* Include padding in the button’s width */
+}
+
+/* Optional: Hover effect */
+.submit-button:hover {
+  background-color: #d57a2c; /* Darker shade of the button color */
+}
+
