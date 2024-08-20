@@ -9,107 +9,117 @@
 </head>
 
 <body class="body">
-    <text style="color: #262727; font-size: 18px; font-weight: 700;",>
+    <text style="color: #262727; font-size: 18px; font-weight: 700;">
         Add New Card
     </text>
 
     <img src="/Users/mac/pin_payment_fields/logo.svg" alt="SVG Image" />
 
     <div class="containerHold">
-   
-            <div id="textFieldContainer">
-                <label for="NameonCard" class="label">Name on Card</label>
-                <div style="padding: 2px"></div>
-                <input  type="text" placeholder="Ethel Boykin" class="text-field" />
 
-                <label for="CardNumber" class="label">Card Number</label>
-                <div style="padding: 2px"></div>
-                <input  type="number" placeholder="55200000000000" class="text-field" />
+        <div id="textFieldContainer">
+            <label for="NameonCard" class="label">Name on Card</label>
+            <div style="padding: 2px"></div>
+            <input type="text" id="nameOnCard" placeholder="Ethel Boykin" class="text-field" />
 
-                <div class="row">
-                    <div  class="column">
-                        <label for="Expiry" class="label">Expiry</label>
-                        <div style="padding: 2px"></div>
-                        <div class="row">
-                            <div id="textFieldContainer" >
-                                <select class="dropDown">
-                                    <option value="" disabled selected>MM</option>
-                                    <option value="01">January</option>
-                                    <option value="02">February</option>
-                                    <option value="03">March</option>
-                                    <option value="04">April</option>
-                                    <option value="05">May</option>
-                                    <option value="06">June</option>
-                                    <option value="07">July</option>
-                                    <option value="08">August</option>
-                                    <option value="09">September</option>
-                                    <option value="10">October</option>
-                                    <option value="11">November</option>
-                                    <option value="12">December</option>
-                                </select>
-                            </div>
-                            <div class="textFieldContainer">
-                                <select class="dropDown">
-                                    <option value="" disabled selected>YYYY</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2030">2030</option>
-                                </select>
-                            </div>
+            <label for="CardNumber" class="label">Card Number</label>
+            <div style="padding: 2px"></div>
+            <input type="number" id="cardNumber" placeholder="55200000000000" class="text-field" />
+
+            <div class="row">
+                <div class="column">
+                    <label for="Expiry" class="label">Expiry</label>
+                    <div style="padding: 2px"></div>
+                    <div class="row">
+                        <div id="textFieldContainer">
+                            <select id="expiryMonth" class="dropDown">
+                                <option value="" disabled selected>MM</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div id="textFieldContainer">
+                            <select id="expiryYear" class="dropDown">
+                                <option value="" disabled selected>YYYY</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="gap"></div>
-                    <div  class="column">
-                        <label for="CVC" class="label">CVC</label>
-                        <div style="padding: 2px"></div>
-                        <div class="row">
-                            <input  type="number" placeholder="123" class="text-field" />
-          
-                        </div>
-                    </div>
-                    
-
                 </div>
-
-    
+                <div class="gap"></div>
+                <div class="column">
+                    <label for="CVC" class="label">CVC</label>
+                    <div style="padding: 2px"></div>
+                    <div class="row">
+                        <input type="number" id="cvc" placeholder="123" class="text-field" />
+                    </div>
+                </div>
             </div>
+        </div>
     </div>
 
     <div class="containerHold2">
-        <text style="color: #262727; font-size: 14px; font-weight: 600;",>
+        <text style="color: #262727; font-size: 14px; font-weight: 600;">
             Billing Details
         </text>
         <div style="padding: 5px"></div>
         <div id="textFieldContainer">
-  
+
             <label for="Addressline1" class="label">Address line 1</label>
             <div style="padding: 2px"></div>
-            <input  type="text" placeholder="No 2 Jane Street, South perth" class="text-field" />
+            <input type="text" id="addressLine1" placeholder="No 2 Jane Street, South Perth" class="text-field" />
 
             <label for="Address line 2" class="label">Address line 2</label>
             <div style="padding: 2px"></div>
-            <input  type="text" placeholder="No 2 Jane Street, South perth" class="text-field" />
-
+            <input type="text" id="addressLine2" placeholder="No 2 Jane Street, South Perth" class="text-field" />
 
             <label for="City" class="label">City</label>
             <div style="padding: 2px"></div>
-            <input  type="City" placeholder="No 2 Jane Street, South perth" class="text-field" />
-
-    
-
-
+            <input type="text" id="city" placeholder="Perth" class="text-field" />
         </div>
-</div>
-<div style="padding: 5px"></div>
+    </div>
+    <div style="padding: 5px"></div>
 
-    <button class="submit-button"
-    type="submit">Submit</button>
+    <button class="submit-button" type="button" onclick="printFormData()">Submit</button>
 
     <div style="padding: 10px"></div>
+
+    <script>
+        function printFormData() {
+            const nameOnCard = document.getElementById('nameOnCard').value;
+            const cardNumber = document.getElementById('cardNumber').value;
+            const expiryMonth = document.getElementById('expiryMonth').value;
+            const expiryYear = document.getElementById('expiryYear').value;
+            const cvc = document.getElementById('cvc').value;
+            const addressLine1 = document.getElementById('addressLine1').value;
+            const addressLine2 = document.getElementById('addressLine2').value;
+            const city = document.getElementById('city').value;
+
+            console.log("Name on Card: " + nameOnCard);
+            console.log("Card Number: " + cardNumber);
+            console.log("Expiry Date: " + expiryMonth + "/" + expiryYear);
+            console.log("CVC: " + cvc);
+            console.log("Address Line 1: " + addressLine1);
+            console.log("Address Line 2: " + addressLine2);
+            console.log("City: " + city);
+        }
+    </script>
 </body>
 
 </html>
